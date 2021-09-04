@@ -14,11 +14,11 @@ public class Circle {
     }
 
     public void calcLength() {
-        length = (float) (2 * Math.PI * radius);
+        length = (float) (2f * Math.PI * radius);
     }
 
     public void calcSquare() {
-        square = (float) (Math.PI * Math.sqrt(radius));
+        square = (float) (Math.PI * Math.pow(radius, 2f));
     }
 
     public float getRadius() {
@@ -45,9 +45,11 @@ public class Circle {
 
     public void setRadius(float r) {
         radius = r;
+        diameter = r * 2f;
     }
 
     public void setDiameter(float d) {
         diameter = d;
+        radius = d / 2f;
     }
 }
