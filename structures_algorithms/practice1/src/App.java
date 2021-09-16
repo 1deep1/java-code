@@ -15,11 +15,11 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int inputNumber = 1;
 
-        System.out.println("Изучение Java.\nТест\n");
+        System.out.println("СИАОД.\nПрактическая работа 1. Вариант 6.\n");
 
         inputNumber = scanner.nextInt();
         
-        System.out.println("Ответ: ");
+        System.out.print("Ответ: ");
         System.out.println(calc(inputNumber));
     }
 }
