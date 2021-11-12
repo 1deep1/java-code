@@ -35,5 +35,20 @@ class Cupboard extends Furniture {
 }
 
 class Chair extends Furniture {
-    private String type;
+    private double height, width, depth, legs;
+    private boolean back;
+
+    public Chair(int id, String name, double price, double height, double width, double depth, double legs, boolean back) {
+        super(id, name, price);
+
+        this.height = height;
+        this.width = width;
+        this.depth = depth;
+        this.legs = legs;
+        this.back = back;
+    }
+
+    public void showInfo() {
+        System.out.println("- Стул: (" + super.getID() + ") " + super.getName() + "\nЦена: " + super.getPrice() + "\nРазмеры (ВШГ): " + height + "см, " + width + "см, " + depth + "см;" + "\nКол-во ножек: " + legs + "\nСпинка: " + back);
+    }
 }

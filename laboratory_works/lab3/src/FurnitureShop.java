@@ -13,6 +13,12 @@ public class FurnitureShop {
 
         //Вывод стульев
         System.out.println("\nСтулья24:");
+        Chair chair1 = new Chair(21, "Трон Короля", 109000.00, 50.032, 30.00, 30.00, 4.0, true);
+        Chair chair2 = new Chair(22, "Табуретка", 1200.00, 60.00, 30.00, 30.00, 4.0, false);
+        Chair chair3 = new Chair(23, "Геймерский чил", 45999.00, 55.00, 45.90, 45.90, 5, true);
+        chair1.showInfo();
+        chair2.showInfo();
+        chair3.showInfo();
     }
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
